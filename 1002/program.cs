@@ -10,11 +10,11 @@ namespace LeetCode._1002
     {
         static void Main(string[] args)
         {
-            double r = 10; //double.Parse(Console.ReadLine());
-
+            double r = double.Parse(Console.ReadLine());
             double Pi = 3.14159;
-            double A = Pi * (r * r);
-            Console.WriteLine("A= ", A);
+            double B = Pi * (r * r);
+            double A = Math.Round(B, 4);
+            Console.WriteLine($"A={A:F4}");
         }
     }
 }
